@@ -7,10 +7,11 @@ public class DialogueManager : MonoBehaviour
     [Header("UI References")]
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI dialogueText;
+    public CharacterManager characterManager;
 
     [Header("Dialogue")]
     [TextArea(3, 10)]
-    public string[] dialogueLines;
+    public DialogueLine [] dialogueLines;
 
     [Header("Typing Settings")]
     public float typingSpeed = 0.03f;
@@ -22,6 +23,7 @@ public class DialogueManager : MonoBehaviour
 
     void Start()
     {
+        characterManager.ChangeSprite("Aya_Happy");
         StartCoroutine(TypeLine());
     }
 
@@ -32,7 +34,7 @@ public class DialogueManager : MonoBehaviour
             if (isTyping)
             {
                 StopAllCoroutines();
-                dialogueText.text = dialogueLines[currentLine];
+                dialogueText.text = dialogueLines[currentLine].dialogue;
 
                 isTyping = false;
                 canContinue = true;
@@ -49,10 +51,15 @@ public class DialogueManager : MonoBehaviour
         isTyping = true;
         canContinue = false;
 
-        nameText.text = "Mysterious Girl";
+        nameText.text = dialogueLines[currentLine].characterName;
+
+        characterManager.ChangeSprite(
+            dialogueLines[currentLine].spriteName
+        );
+
         dialogueText.text = "";
 
-        foreach (char letter in dialogueLines[currentLine])
+        foreach (char letter in dialogueLines[currentLine].dialogue)
         {
             dialogueText.text += letter;
             yield return new WaitForSeconds(typingSpeed);
