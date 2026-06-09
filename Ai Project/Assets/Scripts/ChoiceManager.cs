@@ -1,0 +1,39 @@
+using UnityEngine;
+using TMPro;
+using UnityEngine.UI;
+
+public class ChoiceManager : MonoBehaviour
+{
+    public GameObject choicePanel;
+
+    public Button choiceButton1;
+    public Button choiceButton2;
+
+    public TextMeshProUGUI choiceText1;
+    public TextMeshProUGUI choiceText2;
+
+    private int selectedChoice = -1;
+
+    public void ShowChoices(string option1, string option2)
+    {
+        choicePanel.SetActive(true);
+
+        choiceText1.text = option1;
+        choiceText2.text = option2;
+
+        selectedChoice = -1;
+    }
+
+    public void SelectChoice(int choice)
+    {
+        selectedChoice = choice;
+        choicePanel.SetActive(false);
+
+        Debug.Log("Player selected: " + choice);
+    }
+
+    public int GetChoice()
+    {
+        return selectedChoice;
+    }
+}

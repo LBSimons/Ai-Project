@@ -10,7 +10,6 @@ public class DialogueManager : MonoBehaviour
     public CharacterManager characterManager;
 
     [Header("Dialogue")]
-    [TextArea(3, 10)]
     public DialogueLine [] dialogueLines;
 
     [Header("Typing Settings")]
@@ -23,8 +22,15 @@ public class DialogueManager : MonoBehaviour
 
     void Start()
     {
+        Debug.Log("Start 1");
+
         characterManager.ChangeSprite("Aya_Happy");
+
+        Debug.Log("Start 2");
+
         StartCoroutine(TypeLine());
+
+        Debug.Log("Start 3");
     }
 
     void Update()
