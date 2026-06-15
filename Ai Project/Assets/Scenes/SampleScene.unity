@@ -234,7 +234,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 150, y: -208}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &65545952
@@ -933,7 +933,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 40}
+  m_AnchoredPosition: {x: -150, y: -208}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &602304956
@@ -1308,8 +1308,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 126.37439, y: 57.792664}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 313.8473, y: 0}
+  m_SizeDelta: {x: 440, y: 633}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1934694197
 GameObject:
@@ -1343,19 +1343,48 @@ MonoBehaviour:
   nameText: {fileID: 268763183}
   dialogueText: {fileID: 159727205}
   characterManager: {fileID: 1626135415}
+  choiceManager: {fileID: 235259254}
   dialogueLines:
   - characterName: Aya
     spriteName: Aya_Happy
     dialogue: Hey, you're finally awake.
+    hasChoice: 0
+    choiceOption1: 
+    choiceOption2: 
+    choice1NextLine: 0
+    choice2NextLine: 0
   - characterName: Aya
     spriteName: Aya_Sad
     dialogue: You walked into the wrong classroom.
+    hasChoice: 0
+    choiceOption1: 
+    choiceOption2: 
+    choice1NextLine: 0
+    choice2NextLine: 0
   - characterName: Aya
     spriteName: Aya_Angry
     dialogue: Or maybe... the right one.
-  - characterName: 
-    spriteName: 
-    dialogue: 
+    hasChoice: 1
+    choiceOption1: Yes im at the right one
+    choiceOption2: OH SHIT!!!
+    choice1NextLine: 0
+    choice2NextLine: 0
+  - characterName: Aya
+    spriteName: Aya_Happy
+    dialogue: Would you like to go to the cafe with me?
+    hasChoice: 1
+    choiceOption1: Yes
+    choiceOption2: No
+    choice1NextLine: 1
+    choice2NextLine: 0
+  - characterName: Aya
+    spriteName: Aya_Sad
+    dialogue: Interesting choice....
+    hasChoice: 0
+    choiceOption1: 
+    choiceOption2: 
+    choice1NextLine: 0
+    choice2NextLine: 0
   typingSpeed: 0.03
 --- !u!4 &1934694199
 Transform:
@@ -1367,6 +1396,51 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 483.0968, y: 129.62549, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1938330509
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1938330511}
+  - component: {fileID: 1938330510}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1938330510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1938330509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf50533e9345a1e4f94cae0a0f84e7da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameManager
+  ayaAffection: 0
+--- !u!4 &1938330511
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1938330509}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 682.37445, y: 374.8348, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1732,3 +1806,4 @@ SceneRoots:
   - {fileID: 1934694199}
   - {fileID: 1626135416}
   - {fileID: 235259255}
+  - {fileID: 1938330511}

@@ -14,6 +14,11 @@ public class ChoiceManager : MonoBehaviour
 
     private int selectedChoice = -1;
 
+    void Start()
+    {
+        choicePanel.SetActive(false);
+    }
+
     public void ShowChoices(string option1, string option2)
     {
         choicePanel.SetActive(true);
@@ -29,11 +34,25 @@ public class ChoiceManager : MonoBehaviour
         selectedChoice = choice;
         choicePanel.SetActive(false);
 
-        Debug.Log("Player selected: " + choice);
-    }
+        if (choice == 0)
+        {
+            GameManager.Instance.AddAyaAffection(1);
+        }
+        else if (choice == 1)
+        {
+            GameManager.Instance.AddAyaAffection(-1);
+        }
 
+        Debug.Log("Player selected: " + choice);
+        FindFirstObjectByType<DialogueManager>().ContinueAfterChoice(choice);
+
+    }
     public int GetChoice()
     {
         return selectedChoice;
+    }
+    public bool ChoicesAreOpen()
+    {
+        return choicePanel.activeSelf;
     }
 }

@@ -8,6 +8,7 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI dialogueText;
     public CharacterManager characterManager;
+    public ChoiceManager choiceManager;
 
     [Header("Dialogue")]
     public DialogueLine [] dialogueLines;
@@ -37,6 +38,11 @@ public class DialogueManager : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
+            if (choiceManager != null && choiceManager.ChoicesAreOpen())
+            {
+                return;
+            }
+
             if (isTyping)
             {
                 StopAllCoroutines();
@@ -77,7 +83,38 @@ public class DialogueManager : MonoBehaviour
 
     void NextLine()
     {
+        if (dialogueLines[currentLine].hasChoice)
+        {
+            dialogueLines[currentLine].hasChoice = false;
+
+            choiceManager.ShowChoices(
+                dialogueLines[currentLine].choiceOption1,
+                dialogueLines[currentLine].choiceOption2
+            );
+
+            return;
+        }
+
         currentLine++;
+
+        if (currentLine >= dialogueLines.Length)
+        {
+            Debug.Log("End of dialogue.");
+            return;
+        }
+
+        StartCoroutine(TypeLine());
+    }
+    public void ContinueAfterChoice(int choice)
+    {
+        if (choice == 0)
+        {
+            currentLine = dialogueLines[currentLine].choice1NextLine;
+        }
+        else if (choice == 1)
+        {
+            currentLine = dialogueLines[currentLine].choice2NextLine;
+        }
 
         if (currentLine >= dialogueLines.Length)
         {
