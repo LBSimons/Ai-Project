@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d298a7c27a28d3644b92fe3daff55754
+guid: d95616174f2b8bc478d5303193c4b0b7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4351554546329788627
-    second: Aya_Happy_0
+      213: 2508874642044530505
+    second: 5ccce572-b4e2-4a70-a500-db78efa57fd8_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Aya_Happy_0
+      name: 5ccce572-b4e2-4a70-a500-db78efa57fd8_0
       rect:
         serializedVersion: 2
-        x: 11
-        y: 5
-        width: 470
-        height: 641
+        x: 0
+        y: 0
+        width: 1536
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3d029baedc3d36c30800000000000000
-      internalID: 4351554546329788627
+      spriteID: 94fac01c13051d220800000000000000
+      internalID: 2508874642044530505
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Aya_Happy_0: 4351554546329788627
+      5ccce572-b4e2-4a70-a500-db78efa57fd8_0: 2508874642044530505
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -5,6 +5,7 @@ public class DialogueLine
 {
     public string characterName;
     public string spriteName;
+    public string backgroundName;
 
     [TextArea(3, 10)]
     public string dialogue;

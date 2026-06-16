@@ -9,6 +9,7 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI dialogueText;
     public CharacterManager characterManager;
     public ChoiceManager choiceManager;
+    public BackgroundManager backgroundManager;
 
     [Header("Dialogue")]
     public DialogueLine [] dialogueLines;
@@ -65,9 +66,11 @@ public class DialogueManager : MonoBehaviour
 
         nameText.text = dialogueLines[currentLine].characterName;
 
-        characterManager.ChangeSprite(
-            dialogueLines[currentLine].spriteName
-        );
+        characterManager.ChangeSprite(dialogueLines[currentLine].spriteName);
+        if (!string.IsNullOrEmpty(dialogueLines[currentLine].backgroundName))
+        {
+            backgroundManager.ChangeBackground(dialogueLines[currentLine].backgroundName);
+        }
 
         dialogueText.text = "";
 

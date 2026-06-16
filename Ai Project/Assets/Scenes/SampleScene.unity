@@ -750,6 +750,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1610534128}
   - {fileID: 2116060468}
   - {fileID: 1838383001}
   - {fileID: 1091537382}
@@ -1191,6 +1192,126 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1091537381}
   m_CullTransparentMesh: 1
+--- !u!1 &1447797406
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1447797408}
+  - component: {fileID: 1447797407}
+  m_Layer: 0
+  m_Name: BackgroundManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1447797407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1447797406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb2b93062caacf54d8ad9a66b9529563, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BackgroundManager
+  backgroundImage: {fileID: 1610534129}
+--- !u!4 &1447797408
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1447797406}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 558.7108, y: 419.41113, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1610534127
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1610534128}
+  - component: {fileID: 1610534130}
+  - component: {fileID: 1610534129}
+  m_Layer: 5
+  m_Name: BackgroundImage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1610534128
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1610534127}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 493722130}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.00085449, y: 0}
+  m_SizeDelta: {x: 1135.3, y: 633}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1610534129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1610534127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1610534130
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1610534127}
+  m_CullTransparentMesh: 1
 --- !u!1 &1626135414
 GameObject:
   m_ObjectHideFlags: 0
@@ -1344,42 +1465,258 @@ MonoBehaviour:
   dialogueText: {fileID: 159727205}
   characterManager: {fileID: 1626135415}
   choiceManager: {fileID: 235259254}
+  backgroundManager: {fileID: 1447797407}
   dialogueLines:
-  - characterName: Aya
+  - characterName: ????
+    spriteName: ....
+    backgroundName: darkness
+    dialogue: h...e.....y........ w...or....d. wa..kk..er.....
+    hasChoice: 0
+    choiceOption1: 
+    choiceOption2: 
+    choice1NextLine: 0
+    choice2NextLine: 0
+  - characterName: ????
     spriteName: Aya_Happy
-    dialogue: Hey, you're finally awake.
-    hasChoice: 0
-    choiceOption1: 
-    choiceOption2: 
+    backgroundName: classroom
+    dialogue: ooooh gelukkig, je leeft nog
+    hasChoice: 1
+    choiceOption1: ja
+    choiceOption2: nee
     choice1NextLine: 0
     choice2NextLine: 0
-  - characterName: Aya
-    spriteName: Aya_Sad
-    dialogue: You walked into the wrong classroom.
-    hasChoice: 0
-    choiceOption1: 
-    choiceOption2: 
-    choice1NextLine: 0
-    choice2NextLine: 0
-  - characterName: Aya
+  - characterName: ????
+    spriteName: 
+    backgroundName: classroom
+    dialogue: Gaat alles goed met je?
+    hasChoice: 1
+    choiceOption1: ja joh
+    choiceOption2: nah, nie echt
+    choice1NextLine: 4
+    choice2NextLine: 5
+  - characterName: ????
     spriteName: Aya_Angry
-    dialogue: Or maybe... the right one.
-    hasChoice: 1
-    choiceOption1: Yes im at the right one
-    choiceOption2: OH SHIT!!!
+    backgroundName: classroom
+    dialogue: Je viel bijna in slaap tijdens de les.
+    hasChoice: 0
+    choiceOption1: 
+    choiceOption2: 
+    choice1NextLine: 0
+    choice2NextLine: 0
+  - characterName: Docent
+    spriteName: 
+    backgroundName: classroom
+    dialogue: Aya. is de nieuwe klasgenoot ok?
+    hasChoice: 0
+    choiceOption1: 
+    choiceOption2: 
+    choice1NextLine: 0
+    choice2NextLine: 0
+  - characterName: Aya
+    spriteName: Aya_angry
+    backgroundName: classroom
+    dialogue: jaaa, hij's prima.
+    hasChoice: 0
+    choiceOption1: 
+    choiceOption2: 
+    choice1NextLine: 0
+    choice2NextLine: 0
+  - characterName: 
+    spriteName: 
+    backgroundName: 
+    dialogue: Nou, sinds hij prima is ga ik door met de les...
+    hasChoice: 0
+    choiceOption1: 
+    choiceOption2: 
     choice1NextLine: 0
     choice2NextLine: 0
   - characterName: Aya
     spriteName: Aya_Happy
-    dialogue: Would you like to go to the cafe with me?
+    backgroundName: classroom
+    dialogue: "~~Zou je na school met me mee willen naar het caf\xE9?~~"
     hasChoice: 1
-    choiceOption1: Yes
-    choiceOption2: No
-    choice1NextLine: 1
+    choiceOption1: aight
+    choiceOption2: nah
+    choice1NextLine: 8
+    choice2NextLine: 0
+  - characterName: Aya
+    spriteName: Aya_Happy
+    backgroundName: 
+    dialogue: HELL!! YEAH!!!
+    hasChoice: 0
+    choiceOption1: 
+    choiceOption2: 
+    choice1NextLine: 0
+    choice2NextLine: 0
+  - characterName: Iedereen
+    spriteName: 
+    backgroundName: 
+    dialogue: .....
+    hasChoice: 1
+    choiceOption1: . . .
+    choiceOption2: 
+    choice1NextLine: 8
     choice2NextLine: 0
   - characterName: Aya
     spriteName: Aya_Sad
-    dialogue: Interesting choice....
+    backgroundName: 
+    dialogue: i-i-ik bedoel. cool...
+    hasChoice: 0
+    choiceOption1: 
+    choiceOption2: 
+    choice1NextLine: 0
+    choice2NextLine: 0
+  - characterName: Aya
+    spriteName: Aya_Happy
+    backgroundName: 
+    dialogue: Laten we maar na de les gaan.
+    hasChoice: 0
+    choiceOption1: 
+    choiceOption2: 
+    choice1NextLine: 0
+    choice2NextLine: 0
+  - characterName: Aya
+    spriteName: Aya_Happu
+    backgroundName: outside
+    dialogue: OK, zullen we gaan?
+    hasChoice: 0
+    choiceOption1: ja joh
+    choiceOption2: nah, tis laat
+    choice1NextLine: 14
+    choice2NextLine: 0
+  - characterName: Aya
+    spriteName: Aya_Happy
+    backgroundName: 
+    dialogue: ok laten we naar die ene cafe langs de school waar ik en mn vrieden
+      altijd heen gaan.
+    hasChoice: 0
+    choiceOption1: 
+    choiceOption2: 
+    choice1NextLine: 0
+    choice2NextLine: 0
+  - characterName: Aya
+    spriteName: Aya_Happy
+    backgroundName: cafe
+    dialogue: Yoooooo, deze cafe is net zo hype als toen ik er vroeger heen ging
+    hasChoice: 0
+    choiceOption1: 
+    choiceOption2: 
+    choice1NextLine: 0
+    choice2NextLine: 0
+  - characterName: 
+    spriteName: 
+    backgroundName: 
+    dialogue: Dus waar heb jij zin in
+    hasChoice: 0
+    choiceOption1: 
+    choiceOption2: 
+    choice1NextLine: 0
+    choice2NextLine: 0
+  - characterName: 
+    spriteName: 
+    backgroundName: 
+    dialogue: 
+    hasChoice: 0
+    choiceOption1: 
+    choiceOption2: 
+    choice1NextLine: 0
+    choice2NextLine: 0
+  - characterName: 
+    spriteName: 
+    backgroundName: 
+    dialogue: 
+    hasChoice: 0
+    choiceOption1: 
+    choiceOption2: 
+    choice1NextLine: 0
+    choice2NextLine: 0
+  - characterName: 
+    spriteName: 
+    backgroundName: 
+    dialogue: 
+    hasChoice: 0
+    choiceOption1: 
+    choiceOption2: 
+    choice1NextLine: 0
+    choice2NextLine: 0
+  - characterName: 
+    spriteName: 
+    backgroundName: 
+    dialogue: 
+    hasChoice: 0
+    choiceOption1: 
+    choiceOption2: 
+    choice1NextLine: 0
+    choice2NextLine: 0
+  - characterName: 
+    spriteName: 
+    backgroundName: 
+    dialogue: 
+    hasChoice: 0
+    choiceOption1: 
+    choiceOption2: 
+    choice1NextLine: 0
+    choice2NextLine: 0
+  - characterName: 
+    spriteName: 
+    backgroundName: 
+    dialogue: 
+    hasChoice: 0
+    choiceOption1: 
+    choiceOption2: 
+    choice1NextLine: 0
+    choice2NextLine: 0
+  - characterName: 
+    spriteName: 
+    backgroundName: 
+    dialogue: 
+    hasChoice: 0
+    choiceOption1: 
+    choiceOption2: 
+    choice1NextLine: 0
+    choice2NextLine: 0
+  - characterName: 
+    spriteName: 
+    backgroundName: 
+    dialogue: 
+    hasChoice: 0
+    choiceOption1: 
+    choiceOption2: 
+    choice1NextLine: 0
+    choice2NextLine: 0
+  - characterName: Aya
+    spriteName: Aya_Sad
+    backgroundName: 
+    dialogue: oh, ok.... ja weet je examens zijn ook bijna voor de deur dus ik denk
+      dat het wel handig is als we beide daar aan werken, misschien na examens kunnen
+      we.......
+    hasChoice: 0
+    choiceOption1: 
+    choiceOption2: 
+    choice1NextLine: 0
+    choice2NextLine: 0
+  - characterName: Main Character
+    spriteName: 
+    backgroundName: darkness
+    dialogue: . . . . .
+    hasChoice: 0
+    choiceOption1: 
+    choiceOption2: 
+    choice1NextLine: 0
+    choice2NextLine: 0
+  - characterName: Main Character (idiot)
+    spriteName: 
+    backgroundName: darkness
+    dialogue: OH F*** ZE FLIRTE MET ME!!!
+    hasChoice: 0
+    choiceOption1: 
+    choiceOption2: 
+    choice1NextLine: 0
+    choice2NextLine: 0
+  - characterName: 
+    spriteName: 
+    backgroundName: classroom
+    dialogue: THE END!!!
     hasChoice: 0
     choiceOption1: 
     choiceOption2: 
@@ -1807,3 +2144,4 @@ SceneRoots:
   - {fileID: 1626135416}
   - {fileID: 235259255}
   - {fileID: 1938330511}
+  - {fileID: 1447797408}
