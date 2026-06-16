@@ -1468,7 +1468,7 @@ MonoBehaviour:
   backgroundManager: {fileID: 1447797407}
   dialogueLines:
   - characterName: ????
-    spriteName: ....
+    spriteName: 
     backgroundName: darkness
     dialogue: h...e.....y........ w...or....d. wa..kk..er.....
     hasChoice: 0
@@ -1483,7 +1483,7 @@ MonoBehaviour:
     hasChoice: 1
     choiceOption1: ja
     choiceOption2: nee
-    choice1NextLine: 0
+    choice1NextLine: 3
     choice2NextLine: 0
   - characterName: ????
     spriteName: 
@@ -1521,9 +1521,9 @@ MonoBehaviour:
     choiceOption2: 
     choice1NextLine: 0
     choice2NextLine: 0
-  - characterName: 
+  - characterName: Docent
     spriteName: 
-    backgroundName: 
+    backgroundName: classroom
     dialogue: Nou, sinds hij prima is ga ik door met de les...
     hasChoice: 0
     choiceOption1: 
@@ -1555,7 +1555,7 @@ MonoBehaviour:
     hasChoice: 1
     choiceOption1: . . .
     choiceOption2: 
-    choice1NextLine: 8
+    choice1NextLine: 10
     choice2NextLine: 0
   - characterName: Aya
     spriteName: Aya_Sad
@@ -1579,11 +1579,11 @@ MonoBehaviour:
     spriteName: Aya_Happu
     backgroundName: outside
     dialogue: OK, zullen we gaan?
-    hasChoice: 0
+    hasChoice: 1
     choiceOption1: ja joh
     choiceOption2: nah, tis laat
     choice1NextLine: 14
-    choice2NextLine: 0
+    choice2NextLine: 25
   - characterName: Aya
     spriteName: Aya_Happy
     backgroundName: 
@@ -1603,8 +1603,8 @@ MonoBehaviour:
     choiceOption2: 
     choice1NextLine: 0
     choice2NextLine: 0
-  - characterName: 
-    spriteName: 
+  - characterName: Aya
+    spriteName: Aya_Happy
     backgroundName: 
     dialogue: Dus waar heb jij zin in
     hasChoice: 0
@@ -1612,72 +1612,64 @@ MonoBehaviour:
     choiceOption2: 
     choice1NextLine: 0
     choice2NextLine: 0
-  - characterName: 
-    spriteName: 
-    backgroundName: 
-    dialogue: 
+  - characterName: Aya
+    spriteName: Aya_Happy
+    backgroundName: cafe
+    dialogue: Dat ziet er lekker uit, ik heb gewoon een koffie en koekje
     hasChoice: 0
     choiceOption1: 
     choiceOption2: 
     choice1NextLine: 0
     choice2NextLine: 0
-  - characterName: 
-    spriteName: 
-    backgroundName: 
-    dialogue: 
+  - characterName: Aya
+    spriteName: Aya_sad
+    backgroundName: cafe
+    dialogue: ...Mag ik een hapje
+    hasChoice: 1
+    choiceOption1: ja joh
+    choiceOption2: nah
+    choice1NextLine: 18
+    choice2NextLine: 19
+  - characterName: Aya
+    spriteName: Aya_Happy
+    backgroundName: cafe
+    dialogue: oh thanks bbg ;p
     hasChoice: 0
     choiceOption1: 
     choiceOption2: 
     choice1NextLine: 0
     choice2NextLine: 0
-  - characterName: 
-    spriteName: 
-    backgroundName: 
-    dialogue: 
+  - characterName: Aya
+    spriteName: Aya_Angry
+    backgroundName: cafe
+    dialogue: wooooooooow, ok, dus je laat me gewoon starveren. huh..... >:3
     hasChoice: 0
     choiceOption1: 
     choiceOption2: 
     choice1NextLine: 0
     choice2NextLine: 0
-  - characterName: 
-    spriteName: 
-    backgroundName: 
-    dialogue: 
+  - characterName: Aya
+    spriteName: Aya_Happy
+    backgroundName: outside
+    dialogue: nou dat was lekker, maar er is nog een ding om deze dag compleet te
+      maken
     hasChoice: 0
     choiceOption1: 
     choiceOption2: 
     choice1NextLine: 0
     choice2NextLine: 0
-  - characterName: 
-    spriteName: 
-    backgroundName: 
-    dialogue: 
+  - characterName: Aya
+    spriteName: Aya_Happy
+    backgroundName: outside
+    dialogue: '*hawk muah* '
     hasChoice: 0
     choiceOption1: 
     choiceOption2: 
     choice1NextLine: 0
     choice2NextLine: 0
-  - characterName: 
-    spriteName: 
-    backgroundName: 
-    dialogue: 
-    hasChoice: 0
-    choiceOption1: 
-    choiceOption2: 
-    choice1NextLine: 0
-    choice2NextLine: 0
-  - characterName: 
-    spriteName: 
-    backgroundName: 
-    dialogue: 
-    hasChoice: 0
-    choiceOption1: 
-    choiceOption2: 
-    choice1NextLine: 0
-    choice2NextLine: 0
-  - characterName: 
-    spriteName: 
-    backgroundName: 
+  - characterName: Aya
+    spriteName: Aya_Happy
+    backgroundName: outside
     dialogue: 
     hasChoice: 0
     choiceOption1: 
@@ -1685,8 +1677,18 @@ MonoBehaviour:
     choice1NextLine: 0
     choice2NextLine: 0
   - characterName: Aya
+    spriteName: Aya_Happy
+    backgroundName: outside
+    dialogue: Nou misschien kunnen we nog eens een keer samen uit gaan en zien wat
+      er verder zal gebeuren.
+    hasChoice: 1
+    choiceOption1: ohohohoh
+    choiceOption2: 
+    choice1NextLine: 28
+    choice2NextLine: 0
+  - characterName: Aya
     spriteName: Aya_Sad
-    backgroundName: 
+    backgroundName: classroom
     dialogue: oh, ok.... ja weet je examens zijn ook bijna voor de deur dus ik denk
       dat het wel handig is als we beide daar aan werken, misschien na examens kunnen
       we.......
